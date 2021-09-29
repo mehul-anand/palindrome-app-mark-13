@@ -200,9 +200,9 @@ function clickHandler() {
             var [nextDateCounter, nextDate] = getNextPalindromeDate(date);
             var [prevDateCounter, prevDate] = getPrevPalindromeDate(date);
             if (nextDateCounter > prevDateCounter) {
-                output.innerText = `The nearest palindrome date was ${prevDate.day}-${prevDate.month}-${prevDate.year}, you missed it by ${prevDateCounter} days! 🙂`;
+                output.innerText = `The nearest palindrome date was ${prevDate.day}-${prevDate.month}-${prevDate.year}, you missed it by ${prevDateCounter} day(s)! 🙂`;
             } else {
-                output.innerText = `The nearest palindrome date is ${nextDate.day}-${nextDate.month}-${nextDate.year}, you missed it by ${nextDateCounter} days! 🙂`;
+                output.innerText = `The nearest palindrome date is ${nextDate.day}-${nextDate.month}-${nextDate.year}, you missed it by ${nextDateCounter} day(s)! 🙂`;
             }
 
         }
